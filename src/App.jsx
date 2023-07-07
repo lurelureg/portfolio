@@ -9,20 +9,20 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Flex direction='column' grow={1}>
-        <Routes>
-          <Route path='/' element={<Projects />} />
-          <Route path='/gallery' element={<Gallery />} />
-          <Route path='/about' element={<About />} />
-          <Route path='*' element={<NotFound />} />
-        </Routes>
-      </Flex>
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Navbar />
+            <Flex direction="column" grow={1}>
+                <Routes>
+                    <Route path="/" element={<Projects />} />
+                    <Route path="/gallery" element={<Gallery />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="*" element={<NotFound />} />
+                </Routes>
+            </Flex>
+            <Footer />
+        </>
+    );
 }
 
 export default App;
