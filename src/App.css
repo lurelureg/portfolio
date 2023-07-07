@@ -1,46 +1,46 @@
 #root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 2rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 2rem 2rem 0 2rem;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+    filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 .logoimg {
-  height: 44px;
-  padding: 0;
-  will-change: filter;
-  transition: filter 300ms;
+    height: 44px;
+    padding: 0;
+    will-change: filter;
+    transition: filter 300ms;
 }
 .logoimg:hover {
-  filter: drop-shadow(0 0 0.7em #3ba7ff6d);
+    filter: drop-shadow(0 0 0.7em #3ba7ff6d);
 }
 
 /*NAV layout*/
 
 .link {
-  padding: 1em;
-  font-weight: 500;
-  text-transform: lowercase;
+    padding: 1em;
+    font-weight: 500;
+    text-transform: lowercase;
 }
 
 .link:hover {
-  color: #61dafbaa;
+    color: #61dafbaa;
 }
 
 a.active {
-  font-weight: 700;
+    font-weight: 700;
 }
