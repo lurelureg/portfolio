@@ -1,8 +1,35 @@
-import { Text, Link, Image } from "@chakra-ui/react";
+import { Text, Link, Image, useToast, Button } from "@chakra-ui/react";
 
 export default function Projects() {
+    const toast = useToast();
     return (
         <>
+            <Button
+                onClick={() =>
+                    toast({
+                        title: "Kiddin. This site in under construction.🔨🥪",
+                        description: (
+                            <>
+                                I&apos;m coding it from scratch&nbsp;
+                                <Link
+                                    href="https://github.com/lurelureg/portfolio"
+                                    isExternal
+                                    color="cyan.200"
+                                >
+                                    visit the GitHub repo&nbsp;
+                                </Link>
+                                to see what&apos;s missing.
+                            </>
+                        ),
+                        duration: 9000,
+                        isClosable: true,
+                        colorScheme: "cyan",
+                    })
+                }
+            >
+                Free toast! 🥪 Click Here.
+            </Button>
+
             <Text textStyle="h2" as="h2">
                 I&apos;m a multidisciplinary designer with a focus on UX,
                 creativity and branding.
