@@ -1,6 +1,9 @@
-import { Flex, Text, Image, Link } from "@chakra-ui/react";
+import { Flex, Text, Image, Link, useToast } from "@chakra-ui/react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 export default function Footer() {
+    const toast = useToast();
+
     return (
         <>
             <Flex
@@ -17,17 +20,24 @@ export default function Footer() {
             >
                 {/* Socials */}
                 <Flex gap={"0.75rem"}>
-                    <Link
-                        href="mailto:lucreciagarino@gmail.com"
-                        isExternal
-                        color="cyan.200"
-                    >
-                        <Image
-                            src="src/assets/socials/email.svg"
-                            className="socialIcon"
-                            alt="email me"
-                        />
-                    </Link>
+                    <CopyToClipboard text={"lucreciagarino@gmail.com"}>
+                        <Link
+                            onClick={() =>
+                                toast({
+                                    title: "Copied to clipboard 📋",
+                                    duration: 2000,
+                                    status: "success",
+                                })
+                            }
+                        >
+                            <Image
+                                src="src/assets/socials/email.svg"
+                                className="socialIcon"
+                                alt="email me"
+                            />
+                        </Link>
+                    </CopyToClipboard>
+
                     <Link
                         href="https://www.linkedin.com/in/lucreciagarino"
                         isExternal
