@@ -1,8 +1,36 @@
-import { Text, Link, Image } from "@chakra-ui/react";
-
+import { Text, Link, Image, useToast, Button } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 export default function Projects() {
+    const toast = useToast();
     return (
         <>
+            <Button
+                margin={"0 0 2rem"}
+                onClick={() =>
+                    toast({
+                        title: "Kiddin. This site in under construction.🔨🥪",
+                        description: (
+                            <>
+                                I&apos;m coding it from scratch&nbsp;
+                                <Link
+                                    href="https://github.com/lurelureg/portfolio"
+                                    isExternal
+                                    color="cyan.200"
+                                >
+                                    visit the GitHub repo&nbsp;
+                                </Link>
+                                to see what&apos;s missing.
+                            </>
+                        ),
+                        duration: 9000,
+                        isClosable: true,
+                        colorScheme: "cyan",
+                    })
+                }
+            >
+                Free toast! 🥪 Click Here.
+            </Button>
+
             <Text textStyle="h2" as="h2">
                 I&apos;m a multidisciplinary designer with a focus on UX,
                 creativity and branding.
@@ -41,7 +69,8 @@ export default function Projects() {
             <Text textStyle="p" as="p">
                 Full project on&nbsp;
                 <Link to="https://www.behance.net/gallery/139059395/Lifestyle-coaching-Intagram-grid-posts">
-                    Be&#8599;
+                    Be
+                    <ExternalLinkIcon w={4} h={4} />
                 </Link>
             </Text>
 
@@ -57,7 +86,8 @@ export default function Projects() {
             <Text textStyle="p" as="p">
                 Full project on&nbsp;
                 <Link to="https://www.behance.net/gallery/111510109/Brand-Identity-Social-and-Web">
-                    Be&#8599;
+                    Be
+                    <ExternalLinkIcon w={4} h={4} />
                 </Link>
             </Text>
 
@@ -73,7 +103,8 @@ export default function Projects() {
             <Text textStyle="p" as="p">
                 Full project on&nbsp;
                 <Link to="https://www.behance.net/gallery/119500987/Youth-center-visual-identity">
-                    Be&#8599;
+                    Be
+                    <ExternalLinkIcon w={4} h={4} />
                 </Link>
             </Text>
 
@@ -89,7 +120,7 @@ export default function Projects() {
             <Text textStyle="p" as="p">
                 Full project on&nbsp;
                 <Link to="https://www.behance.net/gallery/92450313/Responsive-Branding">
-                    Be&#8599;
+                    Be <ExternalLinkIcon w={4} h={4} />
                 </Link>
             </Text>
         </>
