@@ -29,18 +29,15 @@
     filter: drop-shadow(0 0 0.7em #3ba7ff6d);
 }
 
-/*NAV layout*/
-
 .link {
     padding: 1em;
-    font-weight: 500;
     text-transform: lowercase;
 }
 
 .link:hover {
-    color: #61dafbaa;
+    color: #76e4f7;
 }
 
 a.active {
-    font-weight: 700;
+    color: #00a3c4;
 }

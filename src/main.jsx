@@ -1,17 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import App from "./App.jsx";
-import "./index.css";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import App from "./App.jsx";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/700.css";
 
-// set custom fonts, colors, etc.
 const theme = extendTheme({
+  fonts: {
+    body: "Poppins, system-ui, sans-serif",
+  },
+  styles: {
+    global: {
+      body: {
+        color: "black",
+      },
+    },
+  },
   textStyles: {
     h2: {
-      // array for sm & bg values
-      fontSize: ["2rem", "2.25rem"],
-      lineHeight: ["2.5rem", "3rem"],
+      fontSize: ["1.75rem", "2rem"],
+      lineHeight: ["2.25rem", "2.5rem"],
       fontWeight: "500",
     },
     h3: {
@@ -23,6 +33,7 @@ const theme = extendTheme({
       fontSize: ["1.25rem", "1.5rem"],
       lineHeight: ["2.25rem", "2rem"],
       fontWeight: "500",
+      color: "blackAlpha.800",
     },
     a: {
       fontSize: ["1rem", "1.12rem"],

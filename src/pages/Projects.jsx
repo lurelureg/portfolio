@@ -2,6 +2,7 @@ import { Text, Link, Image, useToast, Button } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 export default function Projects() {
     const toast = useToast();
+    const toast = useToast();
     return (
         <>
             <Button
