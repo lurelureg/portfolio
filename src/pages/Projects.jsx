@@ -1,4 +1,5 @@
 import { Text, Link, Image, useToast, Button } from "@chakra-ui/react";
+import { Link as LinkRouter } from "react-router-dom";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 export default function Projects() {
     const toast = useToast();
@@ -30,7 +31,6 @@ export default function Projects() {
             >
                 Free toast! 🥪 Click Here.
             </Button>
-
             <Text textStyle="h2" as="h2">
                 I&apos;m a multidisciplinary designer with a focus on UX,
                 creativity and branding.
@@ -50,12 +50,10 @@ export default function Projects() {
                     neighborhood stores.
                 </Text>
             </Link>
-
             <Text textStyle="h2" as="h2">
                 Brand Identities that reflect core values and make my clients
                 proud.
             </Text>
-
             {/* Project Mini1 */}
             <Image
                 src={"src/assets/images/other/branding_1.png"}
@@ -65,7 +63,6 @@ export default function Projects() {
             <Text textStyle="h2" as="h2">
                 Instagram communication strategy for Lifestyle coaching.
             </Text>
-
             <Text textStyle="p" as="p">
                 Full project on&nbsp;
                 <Link to="https://www.behance.net/gallery/139059395/Lifestyle-coaching-Intagram-grid-posts">
@@ -73,7 +70,6 @@ export default function Projects() {
                     <ExternalLinkIcon w={4} h={4} />
                 </Link>
             </Text>
-
             {/* Project Mini2 */}
             <Image
                 src={"src/assets/images/other/branding_2.png"}
@@ -90,7 +86,6 @@ export default function Projects() {
                     <ExternalLinkIcon w={4} h={4} />
                 </Link>
             </Text>
-
             {/* Project Mini3 */}
             <Image
                 src={"src/assets/images/other/branding_3.png"}
@@ -107,7 +102,6 @@ export default function Projects() {
                     <ExternalLinkIcon w={4} h={4} />
                 </Link>
             </Text>
-
             {/* Project Mini4 */}
             <Image
                 src={"src/assets/images/other/branding_4.png"}
@@ -123,6 +117,18 @@ export default function Projects() {
                     Be <ExternalLinkIcon w={4} h={4} />
                 </Link>
             </Text>
+            <Text textStyle="h2" as="h2">
+                Visit the Gallery for more Visual work, and please don’t
+                hesitate to get in touch! &#8600;
+                {/* this entity shows an emoji I hate it,  */}
+            </Text>
+            <LinkRouter to="/gallery">
+                <Image
+                    src={"src/assets/images/other/footer-gallerybg-730.png"}
+                    className="squareImg"
+                    alt="a collage of vertical stripes of works"
+                />
+            </LinkRouter>
         </>
     );
 }

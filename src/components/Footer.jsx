@@ -15,31 +15,79 @@ export default function Footer() {
                 mt="4rem"
                 padding="0 2rem"
             >
-                <Text textStyle="h2" as="h2">
-                    Visit the Gallery for more Visual work, and please don’t
-                    hesitate to get in touch! &#8600;
-                    {/* this entity shows an emoji I hate it,  */}
-                </Text>
-                <Flex>
+                {/* Socials */}
+                <Flex gap={"0.75rem"}>
+                    <Link
+                        href="mailto:lucreciagarino@gmail.com"
+                        isExternal
+                        color="cyan.200"
+                    >
+                        <Image
+                            src="src/assets/socials/email.svg"
+                            className="socialIcon"
+                            alt="email me"
+                        />
+                    </Link>
+                    <Link
+                        href="https://www.linkedin.com/in/lucreciagarino"
+                        isExternal
+                        color="cyan.200"
+                    >
+                        <Image
+                            src="src/assets/socials/linkedin.svg"
+                            className="socialIcon"
+                            alt="link to LinkedIn"
+                        />
+                    </Link>
+                    <Link
+                        href="https://www.behance.net/presenteperfecto"
+                        isExternal
+                        color="cyan.200"
+                    >
+                        <Image
+                            src="src/assets/socials/behance.svg"
+                            className="socialIcon"
+                            alt="link to Behance"
+                        />
+                    </Link>
+                    <Link
+                        href="https://instagram.com/collage.toast"
+                        isExternal
+                        color="cyan.200"
+                    >
+                        <Image
+                            src="src/assets/socials/instagram.svg"
+                            className="socialIcon"
+                            alt="link to Instagram, collage account"
+                        />
+                    </Link>
+                    <Link
+                        href="https://dribbble.com/presenteperfecto"
+                        isExternal
+                        color="cyan.200"
+                    >
+                        <Image
+                            src="src/assets/socials/dribbble.svg"
+                            className="socialIcon"
+                            alt="link to Dribbble"
+                        />
+                    </Link>
                     <Link
                         href="https://github.com/lurelureg"
                         isExternal
                         color="cyan.200"
                     >
                         <Image
-                            w="1.5rem"
-                            h="1.5rem"
-                            src="src/assets/socials/behance.svg"
+                            src="src/assets/socials/github.svg"
                             className="socialIcon"
-                            alt="link to Behance"
+                            alt="link to Github"
                         />
                     </Link>
                 </Flex>
 
-                <Text textStyle="p" as="p">
+                <Text textStyle="small" as="p">
                     Copyright © Lucrecia Garino 2023. All rights reserved.
                 </Text>
-                {/* p is not working */}
             </Flex>
         </>
     );

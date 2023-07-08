@@ -40,6 +40,12 @@ const theme = extendTheme({
             lineHeight: ["1.75rem", "1.75rem"],
             fontWeight: "500",
         },
+
+        small: {
+            fontSize: ["0.60rem", "0.75rem"],
+            lineHeight: ["1rem", "1rem"],
+            fontWeight: "500",
+        },
     },
 });
 
