@@ -38,7 +38,7 @@ export default function Projects() {
             {/* Project 1 */}
             <Link to="/projectOne">
                 <Image
-                    src="src/assets/images/other/project1.png"
+                    src="../assets/images/other/project1.png"
                     className="projectImg"
                     alt="edit this"
                 />
@@ -56,7 +56,7 @@ export default function Projects() {
             </Text>
             {/* Project Mini1 */}
             <Image
-                src={"src/assets/images/other/branding_1.png"}
+                src={"../assets/images/other/branding_1.png"}
                 className="projectImgSm"
                 alt="edit this"
             />
@@ -72,7 +72,7 @@ export default function Projects() {
             </Text>
             {/* Project Mini2 */}
             <Image
-                src={"src/assets/images/other/branding_2.png"}
+                src={"../assets/images/other/branding_2.png"}
                 className="projectImgSm"
                 alt="edit this"
             />
@@ -88,7 +88,7 @@ export default function Projects() {
             </Text>
             {/* Project Mini3 */}
             <Image
-                src={"src/assets/images/other/branding_3.png"}
+                src={"../assets/images/other/branding_3.png"}
                 className="projectImgSm"
                 alt="edit this"
             />
@@ -104,7 +104,7 @@ export default function Projects() {
             </Text>
             {/* Project Mini4 */}
             <Image
-                src={"src/assets/images/other/branding_4.png"}
+                src={"../assets/images/other/branding_4.png"}
                 className="projectImgSm"
                 alt="edit this"
             />
@@ -124,7 +124,7 @@ export default function Projects() {
             </Text>
             <LinkRouter to="/gallery">
                 <Image
-                    src={"src/assets/images/other/footer-gallerybg-730.png"}
+                    src={"../assets/images/other/footer-gallerybg-730.png"}
                     className="squareImg"
                     alt="a collage of vertical stripes of works"
                 />

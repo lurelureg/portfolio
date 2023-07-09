@@ -31,7 +31,7 @@ export default function Footer() {
                             }
                         >
                             <Image
-                                src="src/assets/socials/email.svg"
+                                src="../assets/socials/email.svg"
                                 className="socialIcon"
                                 alt="email me"
                             />
@@ -44,7 +44,7 @@ export default function Footer() {
                         color="cyan.200"
                     >
                         <Image
-                            src="src/assets/socials/linkedin.svg"
+                            src="../assets/socials/linkedin.svg"
                             className="socialIcon"
                             alt="link to LinkedIn"
                         />
@@ -55,7 +55,7 @@ export default function Footer() {
                         color="cyan.200"
                     >
                         <Image
-                            src="src/assets/socials/behance.svg"
+                            src="../assets/socials/behance.svg"
                             className="socialIcon"
                             alt="link to Behance"
                         />
@@ -66,7 +66,7 @@ export default function Footer() {
                         color="cyan.200"
                     >
                         <Image
-                            src="src/assets/socials/instagram.svg"
+                            src="../assets/socials/instagram.svg"
                             className="socialIcon"
                             alt="link to Instagram, collage account"
                         />
@@ -77,7 +77,7 @@ export default function Footer() {
                         color="cyan.200"
                     >
                         <Image
-                            src="src/assets/socials/dribbble.svg"
+                            src="../assets/socials/dribbble.svg"
                             className="socialIcon"
                             alt="link to Dribbble"
                         />
@@ -88,7 +88,7 @@ export default function Footer() {
                         color="cyan.200"
                     >
                         <Image
-                            src="src/assets/socials/github.svg"
+                            src="../assets/socials/github.svg"
                             className="socialIcon"
                             alt="link to Github"
                         />
