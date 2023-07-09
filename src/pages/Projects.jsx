@@ -1,6 +1,8 @@
 import { Text, Link, Image, useToast, Button } from "@chakra-ui/react";
 import { Link as LinkRouter } from "react-router-dom";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import IMAGES from "../images/images";
+
 export default function Projects() {
     const toast = useToast();
     return (
@@ -38,7 +40,7 @@ export default function Projects() {
             {/* Project 1 */}
             <Link to="/projectOne">
                 <Image
-                    src="../assets/images/other/project1.png"
+                    src={IMAGES.other.project1}
                     className="projectImg"
                     alt="edit this"
                 />
@@ -56,7 +58,7 @@ export default function Projects() {
             </Text>
             {/* Project Mini1 */}
             <Image
-                src={"../assets/images/other/branding_1.png"}
+                src={IMAGES.other.branding1}
                 className="projectImgSm"
                 alt="edit this"
             />
@@ -72,7 +74,7 @@ export default function Projects() {
             </Text>
             {/* Project Mini2 */}
             <Image
-                src={"../assets/images/other/branding_2.png"}
+                src={IMAGES.other.branding2}
                 className="projectImgSm"
                 alt="edit this"
             />
@@ -88,7 +90,7 @@ export default function Projects() {
             </Text>
             {/* Project Mini3 */}
             <Image
-                src={"../assets/images/other/branding_3.png"}
+                src={IMAGES.other.branding3}
                 className="projectImgSm"
                 alt="edit this"
             />
@@ -104,7 +106,7 @@ export default function Projects() {
             </Text>
             {/* Project Mini4 */}
             <Image
-                src={"../assets/images/other/branding_4.png"}
+                src={IMAGES.other.branding4}
                 className="projectImgSm"
                 alt="edit this"
             />
@@ -118,13 +120,13 @@ export default function Projects() {
                 </Link>
             </Text>
             <Text textStyle="h2" as="h2">
-                Visit the Gallery for more Visual work, and please don’t
+                Visit the Gallery for more Visual work, and please don&apos;t
                 hesitate to get in touch! &#8600;
                 {/* this entity shows an emoji I hate it,  */}
             </Text>
             <LinkRouter to="/gallery">
                 <Image
-                    src={"../assets/images/other/footer-gallerybg-730.png"}
+                    src={IMAGES.other.footergallerybg730}
                     className="squareImg"
                     alt="a collage of vertical stripes of works"
                 />
