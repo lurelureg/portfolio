@@ -1,5 +1,6 @@
 import { Flex, Text, Image, Link, useToast } from "@chakra-ui/react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import IMAGES from "../images/images";
 
 export default function Footer() {
     const toast = useToast();
@@ -31,7 +32,7 @@ export default function Footer() {
                             }
                         >
                             <Image
-                                src="../assets/socials/email.svg"
+                                src={IMAGES.socials.email}
                                 className="socialIcon"
                                 alt="email me"
                             />
@@ -44,7 +45,7 @@ export default function Footer() {
                         color="cyan.200"
                     >
                         <Image
-                            src="../assets/socials/linkedin.svg"
+                            src={IMAGES.socials.linkedin}
                             className="socialIcon"
                             alt="link to LinkedIn"
                         />
@@ -55,7 +56,7 @@ export default function Footer() {
                         color="cyan.200"
                     >
                         <Image
-                            src="../assets/socials/behance.svg"
+                            src={IMAGES.socials.behance}
                             className="socialIcon"
                             alt="link to Behance"
                         />
@@ -66,7 +67,7 @@ export default function Footer() {
                         color="cyan.200"
                     >
                         <Image
-                            src="../assets/socials/instagram.svg"
+                            src={IMAGES.socials.instagram}
                             className="socialIcon"
                             alt="link to Instagram, collage account"
                         />
@@ -77,7 +78,7 @@ export default function Footer() {
                         color="cyan.200"
                     >
                         <Image
-                            src="../assets/socials/dribbble.svg"
+                            src={IMAGES.socials.dribbble}
                             className="socialIcon"
                             alt="link to Dribbble"
                         />
@@ -88,7 +89,7 @@ export default function Footer() {
                         color="cyan.200"
                     >
                         <Image
-                            src="../assets/socials/github.svg"
+                            src={IMAGES.socials.github}
                             className="socialIcon"
                             alt="link to Github"
                         />
