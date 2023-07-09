@@ -9,15 +9,11 @@ export default function Footer() {
         <>
             <Flex
                 as="footer"
-                shadow={"sm"}
                 justifyContent="space-between"
-                h={"8rem"}
-                direction={{ base: "column", sm: "row" }}
-                alignItems={{ base: "center", sm: "unset" }}
-                margin={"2rem"}
-                mx="-2rem"
-                mt="4rem"
-                padding="0 2rem"
+                direction={{ base: "column", sm: "row-reverse" }}
+                alignItems="center"
+                padding="2rem 0"
+                gap={{ base: "2rem" }}
             >
                 {/* Socials */}
                 <Flex gap={"0.75rem"}>
@@ -96,7 +92,7 @@ export default function Footer() {
                     </Link>
                 </Flex>
 
-                <Text textStyle="small" as="p">
+                <Text textStyle="small" as="p" m={0}>
                     Copyright © Lucrecia Garino 2023. All rights reserved.
                 </Text>
             </Flex>

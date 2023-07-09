@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import App from "./App.jsx";
+import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/500.css";
 import "@fontsource/poppins/600.css";
 import "@fontsource/poppins/700.css";
@@ -14,7 +15,9 @@ const theme = extendTheme({
     styles: {
         global: {
             body: {
+                backgroundColor: "#F5F5F5",
                 color: "black",
+                m: ["0 1rem", "0 2rem"],
             },
         },
     },
@@ -30,9 +33,9 @@ const theme = extendTheme({
             fontWeight: "500",
         },
         p: {
-            fontSize: ["1.25rem", "1.5rem"],
-            lineHeight: ["2.25rem", "2rem"],
-            fontWeight: "500",
+            fontSize: ["1.25rem", "1.40rem"],
+            lineHeight: ["1.75rem", "2rem"],
+            fontWeight: "400",
             color: "blackAlpha.800",
         },
         a: {
@@ -42,7 +45,7 @@ const theme = extendTheme({
         },
 
         small: {
-            fontSize: ["0.60rem", "0.75rem"],
+            fontSize: ["0.75rem"],
             lineHeight: ["1rem", "1rem"],
             fontWeight: "500",
         },

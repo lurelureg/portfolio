@@ -7,6 +7,7 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ProjectView from "./pages/ProjectView";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                     <Route path="/" element={<Projects />} />
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/projectview" element={<ProjectView />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </Flex>

@@ -3,13 +3,15 @@
     flex-direction: column;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 2rem 2rem 0 2rem;
 }
 
-h2,
+h2 {
+    margin: 2rem 0;
+}
+
 h3,
 p {
-    margin-bottom: 2rem;
+    margin: 1rem 0 0;
 }
 
 .logo {
@@ -33,6 +35,10 @@ p {
 }
 .logoimg:hover {
     filter: drop-shadow(0 0 0.7em #3ba7ff6d);
+}
+
+a p:hover {
+    color: #00a3c4;
 }
 
 .link {
