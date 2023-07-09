@@ -66,9 +66,9 @@ export default function Projects() {
             FoodFinder is designed to help you find products at your
             neighborhood stores.
             <br />
-            <Link textDecoration={"underline"} href='/projectview'>
+            <LinkRouter to='/projectview' className='link-underlined'>
               Go To Project
-            </Link>
+            </LinkRouter>
           </Text>
         </Flex>
       </Box>
@@ -218,8 +218,10 @@ export default function Projects() {
       >
         <Text textStyle='h2' as='h2'>
           Visit the&nbsp;
-          <LinkRouter to='/gallery'>Gallery</LinkRouter> for more Visual work,
-          and please don&apos;t hesitate to get in touch!
+          <LinkRouter to='/gallery' className='link-underlined'>
+            Gallery
+          </LinkRouter>{" "}
+          for more Visual work, and please don&apos;t hesitate to get in touch!
           <LinkRouter to='/gallery'> &#8600;</LinkRouter>
         </Text>
         <LinkRouter to='/gallery'>

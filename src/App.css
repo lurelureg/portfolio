@@ -46,6 +46,10 @@ a p:hover {
   text-transform: lowercase;
 }
 
+.link-underlined {
+  text-decoration: underline;
+}
+
 .link:hover {
   color: #76e4f7;
 }
