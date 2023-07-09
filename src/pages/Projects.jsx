@@ -29,9 +29,8 @@ export default function Projects() {
                                     isExternal
                                     color="cyan.200"
                                 >
-                                    visit the GitHub repo&nbsp;
+                                    visit the GitHub repo&nbsp;.
                                 </Link>
-                                to see what&apos;s missing.
                             </>
                         ),
                         duration: 9000,
@@ -44,8 +43,8 @@ export default function Projects() {
             </Button>
             {/* Header */}
             <Text textStyle="h2" as="h2">
-                I&apos;m a multidisciplinary designer with a focus on <br />
-                UX, creativity and branding.
+                I&apos;m a multidisciplinary designer with a focus on UX,
+                creativity and branding.
             </Text>
             {/* Project 1 */}
             <Box margin={"1rem 0 2rem"}>
@@ -69,10 +68,7 @@ export default function Projects() {
                         FoodFinder is designed to help you find products at your
                         neighborhood stores.
                         <br />
-                        <Link
-                            textDecoration={"underline"}
-                            to="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-                        >
+                        <Link textDecoration={"underline"} href="/projectview">
                             Go To Project
                         </Link>
                     </Text>
