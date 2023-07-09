@@ -44,6 +44,15 @@ export default function ProjectView() {
                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fa5z0Zyjkq3yi8xslCtptqq%2FFinal-FoodFinder%3Fpage-id%3D405%253A190%26type%3Ddesign%26node-id%3D405-1593%26viewport%3D208%252C156%252C0.32%26t%3DWaDGh3S9f655Xrxr-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D410%253A342%26mode%3Ddesign"
                 />
             </Center>
+
+            <Center>
+                <iframe
+                    // style="border: 1px solid rgba(0, 0, 0, 0.1);"
+                    width="800"
+                    height="450"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fa5z0Zyjkq3yi8xslCtptqq%2FFinal-FoodFinder%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D4-3%26viewport%3D343%252C331%252C0.05%26t%3Dk94QNCTOaGVTkCRy-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D4%253A3%26mode%3Ddesign"
+                ></iframe>
+            </Center>
         </>
     );
 }

@@ -7,7 +7,7 @@ export default function About() {
                 Lucrecia Garino is a Visual Designer from Argentina.🧉 Currently
                 based in Berlin. 🐻
             </Text>
-            <Text textStyle="p" as="p">
+            <Text textStyle="p" as="p" w={{ base: "unset", sm: "70%" }}>
                 With over a decade of experience in communication design,
                 I&apos;ve become a pro at bringing creativity to life through
                 eye-catching designs. <br />
