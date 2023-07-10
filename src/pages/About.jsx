@@ -16,7 +16,7 @@ export default function About() {
         Art and design run deep in my veins. My mom&apos;s an architect, artist,
         and crafter, and my dad&apos;s an engineer. I guess you could say I
         inherited by force of habit&#40;at&#41; the perfect blend of{" "}
-        <strong>creativity</strong> and
+        <strong>creativity</strong> and&nbsp;
         <strong>problem-solving skills.</strong>
         <br />
         <br />I studied at a local school of arts and crafts, specializing in
