@@ -20,7 +20,7 @@ export default function Projects() {
         margin={"0 0 1rem"}
         onClick={() =>
           toast({
-            title: "Kiddin. This site in under construction.🔨🥪",
+            title: "Kiddin. This site is under construction.🔨🥪",
             description: (
               <>
                 I&apos;m coding it from scratch&nbsp;
