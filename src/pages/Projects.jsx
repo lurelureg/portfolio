@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Image, SimpleGrid } from "@chakra-ui/react";
+import { Box, Flex, Text, Image, SimpleGrid, Divider } from "@chakra-ui/react";
 import { Link as LinkRouter } from "react-router-dom";
 // import { ExternalLinkIcon } from "@chakra-ui/icons";
 import IMAGES from "../images/images";
@@ -17,7 +17,7 @@ export default function Projects() {
                 justifyItems="center"
             >
                 {/* Project Mini1 */}
-                <Box margin={"1rem 0 3rem"}>
+                <Box margin={{base: "1rem 0 1rem", sm: "1rem 0 3rem"}}>
                     <LinkRouter to="/project/katerina">
                         <Image
                             src={IMAGES.other.katerina}
@@ -52,8 +52,11 @@ export default function Projects() {
                         </Text> */}
                     </Flex>
                 </Box>
+
+                <Divider display={{base: "block", sm: "none"}}/>
+
                 {/* Project Mini2 */}
-                <Box margin={"1rem 0 3rem"}>
+                <Box margin={{base: "0 0 1rem", sm: "1rem 0 3rem"}}>
                     <LinkRouter to="/project/misobservatorio">
                         <Image
                             src={IMAGES.other.misobservatorio}
@@ -83,8 +86,11 @@ export default function Projects() {
                         </Text> */}
                     </Flex>
                 </Box>
+
+                <Divider display={{base: "block", sm: "none"}}/>
+                
                 {/* Project Mini3 */}
-                <Box margin={"1rem 0 3rem"}>
+                <Box margin={{base: "0 0 1rem", sm: "1rem 0 3rem"}}>
                     <LinkRouter to="/project/allin">
                         <Image
                             src={IMAGES.other.allin}
@@ -114,8 +120,11 @@ export default function Projects() {
                         </Text> */}
                     </Flex>
                 </Box>
+                
+                <Divider display={{base: "block", sm: "none"}}/>
+
                 {/* Project Mini4 */}
-                <Box margin={"1rem 0 3rem"}>
+                <Box margin={{base: "0 0 1rem", sm: "1rem 0 3rem"}}>
                     <LinkRouter to="/project/tierracristal">
                         <Image
                             src={IMAGES.other.tierracristal}
@@ -148,8 +157,11 @@ export default function Projects() {
                         </Text> */}
                     </Flex>
                 </Box>
+
+                <Divider display={{base: "block", sm: "none"}}/>
+
                 {/* Project Mini5 */}
-                <Box margin={"1rem 0 3rem"}>
+                <Box margin={{base: "0 0 1rem", sm: "1rem 0 3rem"}}>
                     <LinkRouter to="/project/ngonh">
                         <Image
                             src={IMAGES.other.ngonh}
@@ -182,8 +194,11 @@ export default function Projects() {
                         </Text> */}
                     </Flex>
                 </Box>
+
+                <Divider display={{base: "block", sm: "none"}}/>
+                
                 {/* Project Mini6 */}
-                <Box margin={"1rem 0 3rem"}>
+                <Box margin={{base: "0 0 1rem", sm: "1rem 0 3rem"}}>
                     <LinkRouter to="/project/awty">
                         <Image
                             src={IMAGES.other.awty}
