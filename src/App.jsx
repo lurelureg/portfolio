@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectView from "./pages/ProjectView";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </Flex>
+            <ScrollToTop />
             <Footer />
         </>
     );
