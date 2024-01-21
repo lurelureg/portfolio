@@ -1,58 +1,186 @@
-import { Text, Box, Center } from "@chakra-ui/react";
+import { useParams } from "react-router-dom";
+import { Center, Text, Box, Flex, SimpleGrid, Image } from "@chakra-ui/react";
+import IMAGES from "../images/images";
 
 export default function ProjectView() {
+    // taken from the URL
+    const { projectId } = useParams();
+
+    // title, subtitle, text1,
+    // client, industry, service, deliverables
+    // cover, text2, gallery, text3
+    // MAYBE ADD A LINK TO FULL PROJECT ON BEHANCE
+    let projectData = {};
+
+    switch (projectId) {
+        case "allin":
+            projectData = {
+                title: "Youth Center Brand Identity",
+                subtitle: "Key visuals & Branding.",
+                text1: "Empowering self-expression among teenagers, All In emerges as a community platform. With a mission to foster meaningful connections, the organization operates through an innovative app that facilitates group formation and development, fostering genuine bonds among participants.",
+                client: "All In",
+                industry: "Civic Organization",
+                service: "Brand strategy & design\nWorkshop facilitation",
+                deliverables: "Key visuals & Branding\nAnimation guidelines",
+                cover: IMAGES.other.allin,
+                text2: "A strategic brand identity featuring captivating key visuals and branding elements. To enrich the experience, I also crafted animation guidelines, infusing vitality into the brand and ensuring a consistent and compelling narrative.",
+                gallery: IMAGES.projectGalleries.allin,
+                text3: "",
+            };
+            break;
+
+        case "katerina":
+            projectData = {
+                title: "",
+                subtitle: "",
+                text1: "",
+                client: "",
+                industry: "",
+                service: "",
+                deliverables: "",
+                cover: IMAGES.other.katerina,
+                text2: "",
+                gallery: IMAGES.projectGalleries.katerina,
+                text3: "",
+            };
+            break;
+        case "tierracristal":
+            projectData = {
+                title: "",
+                subtitle: "",
+                text1: "",
+                client: "",
+                industry: "",
+                service: "",
+                deliverables: "",
+                cover: IMAGES.other.tierracristal,
+                text2: "",
+                gallery: IMAGES.projectGalleries.tierracristal,
+                text3: "",
+            };
+            break;
+        case "misobservatorio":
+            projectData = {
+                title: "",
+                subtitle: "",
+                text1: "",
+                client: "",
+                industry: "",
+                service: "",
+                deliverables: "",
+                cover: IMAGES.other.misobservatorio,
+                text2: "",
+                gallery: IMAGES.projectGalleries.misobservatorio,
+                text3: "",
+            };
+            break;
+        case "ngonh":
+            projectData = {
+                title: "",
+                subtitle: "",
+                text1: "",
+                client: "",
+                industry: "",
+                service: "",
+                deliverables: "",
+                cover: IMAGES.other.ngonh,
+                text2: "",
+                gallery: IMAGES.projectGalleries.ngonh,
+                text3: "",
+            };
+            break;
+        case "awty":
+            projectData = {
+                title: "",
+                subtitle: "",
+                text1: "",
+                client: "",
+                industry: "",
+                service: "",
+                deliverables: "",
+                cover: IMAGES.other.awty,
+                text2: "",
+                gallery: IMAGES.projectGalleries.awty,
+                text3: "",
+            };
+            break;
+
+        default:
+            break;
+    }
+
     return (
         <>
             <Box>
-                <Text textStyle="h3" as="h3">
-                    Food Finder Mobile App
+                <Text textStyle="h4" as="h4">
+                    {projectData.subtitle}
                 </Text>
-
+                <Text textStyle="h2" as="h2">
+                    {projectData.title}
+                </Text>
+                {/* text1 */}
                 <Text textStyle="p" as="p">
-                    <strong>Role</strong> <br />
-                    Web Development, <br />
-                    Ideation, Planning, <br />
-                    Architecture
+                    {projectData.text1}
                 </Text>
-
-                <Text textStyle="p" as="p">
-                    <strong>Deliverables</strong> <br />
-                    Presentation Pitch, <br />
-                    On Boarding Prototype, <br />
-                    deployed App
-                </Text>
+                <Flex
+                    direction={{ base: "column", md: "row" }}
+                    w="100%"
+                    align="start"
+                    gap={6}
+                    margin={"5rem 0"}
+                >
+                    <Box flex="1 0 auto">
+                        <Text textStyle="p" as="p">
+                            <strong>Client</strong> <br />
+                            {projectData.client}
+                        </Text>
+                    </Box>
+                    <Box flex="1 0 auto">
+                        <Text textStyle="p" as="p">
+                            <strong>Industry</strong> <br />
+                            {projectData.industry}
+                        </Text>
+                    </Box>
+                    <Box flex="1 0 auto">
+                        <Text textStyle="p" as="p">
+                            <strong>Service</strong> <br />
+                            {projectData.service}
+                        </Text>
+                    </Box>
+                    <Box flex="1 0 auto">
+                        <Text textStyle="p" as="p">
+                            <strong>Deliverables</strong> <br />
+                            {projectData.deliverables}
+                        </Text>
+                    </Box>
+                </Flex>
             </Box>
+            <Box margin={"5rem 0"}>
+                <Image src={projectData.cover} alt="project1" />
+            </Box>
+
+            {/* text2 */}
             <Text textStyle="p" as="p">
-                The Food Finder mobile app is designed to assist individuals
-                with specific dietary requirements in locating suitable products
-                at nearby stores. The app, built using React and Ionic
-                Framework, integrates with various APIs to provide real-time
-                data. Users can search for products based on their dietary
-                restrictions and have at one glance if it&apos;s suited for
-                them. The app also includes a map feature to find store
-                locations and availability. Leveraging AI technology, the app
-                connects the product search and location search features to
-                identify nearby stores stocking the desired items. User feedback
-                on product availability is encouraged, thanks to good simple UX.
+                {projectData.text2}
             </Text>
 
-            <Center>
-                <iframe
-                    // style="border: 1px solid rgba(0, 0, 0, 0.1);"
-                    width="400"
-                    height="900"
-                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fa5z0Zyjkq3yi8xslCtptqq%2FFinal-FoodFinder%3Fpage-id%3D405%253A190%26type%3Ddesign%26node-id%3D405-1593%26viewport%3D208%252C156%252C0.32%26t%3DWaDGh3S9f655Xrxr-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D410%253A342%26mode%3Ddesign"
-                />
-            </Center>
+            <SimpleGrid
+                columns={{ base: 1, sm: 2 }}
+                spacing="2rem"
+                justifyItems="center"
+                margin={"5rem 0"}
+            >
+                {projectData.gallery.map((imagePath, index) => (
+                    <Center key={index}>
+                        <Image src={imagePath} alt={projectId + index} />
+                    </Center>
+                ))}
+            </SimpleGrid>
 
-            <Center>
-                <iframe
-                    // style="border: 1px solid rgba(0, 0, 0, 0.1);"
-                    width="800"
-                    height="450"
-                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fa5z0Zyjkq3yi8xslCtptqq%2FFinal-FoodFinder%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D4-3%26viewport%3D343%252C331%252C0.05%26t%3Dk94QNCTOaGVTkCRy-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D4%253A3%26mode%3Ddesign"
-                ></iframe>
-            </Center>
+            {/* text3 */}
+            <Text textStyle="p" as="p">
+                {projectData.text3}
+            </Text>
         </>
     );
 }
