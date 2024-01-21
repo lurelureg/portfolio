@@ -18,7 +18,10 @@ function App() {
                     <Route path="/" element={<Projects />} />
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/projectview" element={<ProjectView />} />
+                    <Route
+                        path="/project/:projectId"
+                        element={<ProjectView />}
+                    />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </Flex>

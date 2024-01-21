@@ -1,6 +1,5 @@
-import lucreLogo from "/logoLucre.svg";
-import { Link, NavLink } from "react-router-dom";
-import { Flex, Image, Text } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
+import { Flex, Text } from "@chakra-ui/react";
 
 export default function Navbar() {
     return (
@@ -10,15 +9,13 @@ export default function Navbar() {
                 h={"8rem"}
                 direction={{ base: "column", sm: "row" }}
                 alignItems={{ base: "center", sm: "unset" }}
-                margin={"2rem"}
+                margin={"2rem 0"}
             >
-                <Link to="/">
-                    <Image
-                        src={lucreLogo}
-                        className="logoimg"
-                        alt="Lucre logo"
-                    />
-                </Link>
+                <NavLink to="/" className="logoimg">
+                    <Text textStyle="a" as="span">
+                        Lucrecia Garino
+                    </Text>
+                </NavLink>
                 <div>
                     <NavLink className="link" to="/">
                         <Text textStyle="a" as="span">
