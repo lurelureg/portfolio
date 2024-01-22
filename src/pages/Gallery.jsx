@@ -14,31 +14,62 @@ const ImageGallery = () => {
                 get a glimpse of my personal projects.
             </Text>
 
-            <Flex gap={"2em"} margin={"1em 0"} w={"1vw"}>
-                <Button p={"1em 3em"} onClick={() => setFilterCategory("")}>
-                    show all
-                </Button>
-                <Button p={"1em 3em"} onClick={() => setFilterCategory("logo")}>
-                    logo
-                </Button>
-                <Button
-                    p={"1em 3em"}
-                    onClick={() => setFilterCategory("collage")}
-                >
-                    collage
-                </Button>
-                <Button
-                    p={"1em 3em"}
-                    onClick={() => setFilterCategory("illustration")}
-                >
-                    illustration
-                </Button>
-                <Button
-                    p={"1em 3em"}
-                    onClick={() => setFilterCategory("keyvisual")}
-                >
-                    keyvisual
-                </Button>
+            <Flex
+                gap={"1em"}
+                margin={"1em 0"}
+                width="100%"
+                flexWrap="wrap"
+                justifyContent="space-between"
+            >
+                <Flex flexBasis={0} flexGrow={1}>
+                    <Button
+                        width="100%"
+                        p={".5em 1em"}
+                        onClick={() => setFilterCategory("")}
+                    >
+                        show everything
+                    </Button>
+                </Flex>
+
+                <Flex flexBasis={0} flexGrow={1}>
+                    <Button
+                        width="100%"
+                        p={".5em 1em"}
+                        onClick={() => setFilterCategory("logo")}
+                    >
+                        logo
+                    </Button>
+                </Flex>
+
+                <Flex flexBasis={0} flexGrow={1}>
+                    <Button
+                        width="100%"
+                        p={".5em 1em"}
+                        onClick={() => setFilterCategory("collage")}
+                    >
+                        collage
+                    </Button>
+                </Flex>
+
+                <Flex flexBasis={0} flexGrow={1}>
+                    <Button
+                        width="100%"
+                        p={".5em 1em"}
+                        onClick={() => setFilterCategory("illustration")}
+                    >
+                        illustration
+                    </Button>
+                </Flex>
+
+                <Flex flexBasis={0} flexGrow={1}>
+                    <Button
+                        width="100%"
+                        p={".5em 1em"}
+                        onClick={() => setFilterCategory("keyvisual")}
+                    >
+                        keyvisual
+                    </Button>
+                </Flex>
             </Flex>
 
             <SimpleGrid
