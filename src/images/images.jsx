@@ -1,67 +1,54 @@
 const IMAGES = {
     gallery: [
         // collage
-        new URL("./gallery/collage/4b421_md.png", import.meta.url).href,
-        new URL("./gallery/collage/abundance_md.png", import.meta.url).href,
-        new URL("./gallery/collage/chinatown_md.png", import.meta.url).href,
-        new URL("./gallery/collage/collage_toast_md.png", import.meta.url).href,
-        new URL(
-            "./gallery/collage/cuyes_nuevo_amanecerB_md.png",
-            import.meta.url
-        ).href,
-        new URL("./gallery/collage/green_md.png", import.meta.url).href,
-        new URL("./gallery/collage/mixed_003_md.png", import.meta.url).href,
-        new URL("./gallery/collage/mixed_009_md.png", import.meta.url).href,
-        new URL("./gallery/collage/MA_I436653full_md.png", import.meta.url)
-            .href,
-        new URL("./gallery/collage/mixed_005_md.png", import.meta.url).href,
-        new URL("./gallery/collage/orange_md.png", import.meta.url).href,
+        new URL("./gallery/collage/collage1.png", import.meta.url).href,
+        new URL("./gallery/collage/collage2.png", import.meta.url).href,
+        new URL("./gallery/collage/collage3.png", import.meta.url).href,
+        new URL("./gallery/collage/collage4.png", import.meta.url).href,
+        new URL("./gallery/collage/collage5.png", import.meta.url).href,
+        new URL("./gallery/collage/collage6.png", import.meta.url).href,
+        new URL("./gallery/collage/collage7.png", import.meta.url).href,
+        new URL("./gallery/collage/collage8.png", import.meta.url).href,
+        new URL("./gallery/collage/collage9.png", import.meta.url).href,
+        new URL("./gallery/collage/collage10.png", import.meta.url).href,
+        new URL("./gallery/collage/collage11.png", import.meta.url).href,
 
         // illustration
-        new URL("./gallery/illustration/Circusbear_md.png", import.meta.url)
+        new URL("./gallery/illustration/illustration2.png", import.meta.url)
             .href,
-        new URL("./gallery/illustration/mixed_001_md.gif", import.meta.url)
+        new URL("./gallery/illustration/illustration1.gif", import.meta.url)
             .href,
-        new URL("./gallery/illustration/mixed_002_md.gif", import.meta.url)
+        new URL("./gallery/illustration/illustration5.gif", import.meta.url)
             .href,
-        new URL("./gallery/illustration/mixed_006_md.png", import.meta.url)
+        new URL("./gallery/illustration/illustration4.png", import.meta.url)
             .href,
-        new URL("./gallery/illustration/PearGrain_md.png", import.meta.url)
+        new URL("./gallery/illustration/illustration3.png", import.meta.url)
             .href,
 
         // keyvisual
-        new URL("./gallery/keyvisual/H_Dribbble_md.png", import.meta.url).href,
-        new URL(
-            "./gallery/keyvisual/Logo-Measures-Final_md.gif",
-            import.meta.url
-        ).href,
-        new URL("./gallery/keyvisual/mixed_008_md.png", import.meta.url).href,
-        new URL("./gallery/keyvisual/Invisible_md.png", import.meta.url).href,
-        new URL("./gallery/keyvisual/Round_md.gif", import.meta.url).href,
-        new URL("./gallery/keyvisual/AWTY_Dribbble_md.png", import.meta.url)
-            .href,
-        new URL("./gallery/keyvisual/ALLIN_fondosmall_md.png", import.meta.url)
-            .href,
-        new URL("./gallery/keyvisual/fondo_md.png", import.meta.url).href,
-        new URL("./gallery/keyvisual/billboard_md.png", import.meta.url).href,
-        new URL("./gallery/keyvisual/Egypt_palette_md.png", import.meta.url)
-            .href,
-        new URL("./gallery/keyvisual/kat_md.png", import.meta.url).href,
-        new URL("./gallery/keyvisual/Social_keyvisual_md.png", import.meta.url)
-            .href,
-        new URL("./gallery/keyvisual/UI_countdown_md.png", import.meta.url)
-            .href,
+        new URL("./gallery/keyvisual/keyvisual1.gif", import.meta.url).href,
+        new URL("./gallery/keyvisual/keyvisual2.png", import.meta.url).href,
+        new URL("./gallery/keyvisual/keyvisual3.png", import.meta.url).href,
+        new URL("./gallery/keyvisual/keyvisual4.png", import.meta.url).href,
+        new URL("./gallery/keyvisual/keyvisual5.png", import.meta.url).href,
+        new URL("./gallery/keyvisual/keyvisual6.png", import.meta.url).href,
+        new URL("./gallery/keyvisual/keyvisual7.png", import.meta.url).href,
+        new URL("./gallery/keyvisual/keyvisual8.gif", import.meta.url).href,
+        new URL("./gallery/keyvisual/keyvisual9.png", import.meta.url).href,
+        new URL("./gallery/keyvisual/keyvisual10.png", import.meta.url).href,
+        new URL("./gallery/keyvisual/keyvisual11.png", import.meta.url).href,
+        new URL("./gallery/keyvisual/keyvisual12.png", import.meta.url).href,
+
         // logo
-        new URL("./gallery/logo/005-DriverlessCar_md.png", import.meta.url)
-            .href,
-        new URL("./gallery/logo/insurance_md.png", import.meta.url).href,
-        new URL("./gallery/logo/cny_edit_md.png", import.meta.url).href,
-        new URL("./gallery/logo/Havi_new_md.png", import.meta.url).href,
-        new URL("./gallery/logo/brand_grill_md.png", import.meta.url).href,
-        new URL("./gallery/logo/Logos_simple_md.png", import.meta.url).href,
-        new URL("./gallery/logo/Moow_md.png", import.meta.url).href,
-        new URL("./gallery/logo/madefordigital2_md.png", import.meta.url).href,
-        new URL("./gallery/logo/Ski_mountain_md.png", import.meta.url).href,
+        new URL("./gallery/logo/logo1.png", import.meta.url).href,
+        new URL("./gallery/logo/logo2.png", import.meta.url).href,
+        new URL("./gallery/logo/logo3.png", import.meta.url).href,
+        new URL("./gallery/logo/logo4.png", import.meta.url).href,
+        new URL("./gallery/logo/logo5.png", import.meta.url).href,
+        new URL("./gallery/logo/logo6.png", import.meta.url).href,
+        new URL("./gallery/logo/logo7.png", import.meta.url).href,
+        new URL("./gallery/logo/logo8.png", import.meta.url).href,
+        new URL("./gallery/logo/logo9.png", import.meta.url).href,
     ],
     other: {
         footergallerybg730: new URL(

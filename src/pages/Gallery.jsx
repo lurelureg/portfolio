@@ -47,10 +47,7 @@ const ImageGallery = () => {
                 justifyItems="center"
             >
                 {IMAGES.gallery
-                    .filter((imagePath) => {
-                        console.log("PATH", imagePath);
-                        return imagePath.includes(`gallery/${filterCategory}`);
-                    })
+                    .filter((imagePath) => imagePath.includes(filterCategory))
                     .map((imagePath, index) => (
                         <Center key={index}>
                             <LazyLoadImage src={imagePath} />
