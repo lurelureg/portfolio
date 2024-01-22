@@ -1,14 +1,14 @@
 import { Text, Box, Flex } from "@chakra-ui/react";
+import PageWrapper from "../components/PageWrapper";
 
 export default function About() {
     return (
-        <>
-            <Text textStyle="h2" as="h2">
-                Lucrecia Garino is a multifaceted designer
-                <br />
-                with a focus on Branding, Creative Strategy, and Digital
-                Mediums.
-                <br />
+        <PageWrapper>
+            <Text textStyle="h2" as="h2" w={{ base: "unset", sm: "70%" }}>
+                Lucrecia Garino is a multifaceted designer with a focus on
+                Branding, Creative Strategy, and Digital Mediums.
+            </Text>
+            <Text textStyle="h3" as="h3" w={{ base: "unset", sm: "70%" }}>
                 <small>Currently based in Berlin. 🐻</small>
             </Text>
             <Text textStyle="p" as="p" w={{ base: "unset", sm: "70%" }}>
@@ -104,6 +104,6 @@ export default function About() {
                     </Text>
                 </Box>
             </Flex>
-        </>
+        </PageWrapper>
     );
 }

@@ -11,6 +11,7 @@ import {
     Link,
 } from "@chakra-ui/react";
 import IMAGES from "../images/images";
+import PageWrapper from "../components/PageWrapper";
 
 export default function ProjectView() {
     // taken from the URL
@@ -131,7 +132,7 @@ export default function ProjectView() {
     }
 
     return (
-        <>
+        <PageWrapper>
             <Box>
                 <Text textStyle="h4" as="h4">
                     {projectData.subtitle}
@@ -216,6 +217,6 @@ export default function ProjectView() {
                     <ExternalLinkIcon w={6} h={6} />
                 </Link>
             </Text>
-        </>
+        </PageWrapper>
     );
 }

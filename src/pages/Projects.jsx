@@ -1,10 +1,12 @@
 import { Box, Flex, Text, Image, SimpleGrid, Divider } from "@chakra-ui/react";
 import { Link as LinkRouter } from "react-router-dom";
 import IMAGES from "../images/images";
+import ImageCover from "../components/ImageCover";
+import PageWrapper from "../components/PageWrapper";
 
 export default function Projects() {
     return (
-        <>
+        <PageWrapper>
             <Text textStyle="h2" as="h2">
                 Branding that reflects core values <br />
                 and make companies proud.
@@ -18,10 +20,9 @@ export default function Projects() {
                 {/* Project Mini1 */}
                 <Box margin={{ base: "0 0 1rem", sm: "1rem 0 3rem" }}>
                     <LinkRouter to="/project/allin">
-                        <Image
+                        <ImageCover
                             src={IMAGES.other.allin}
-                            alt=""
-                            className="projectImgSm"
+                            alt="cover image for All In"
                         />
                     </LinkRouter>
                     <Flex
@@ -52,10 +53,9 @@ export default function Projects() {
                 {/* Project Mini2 */}
                 <Box margin={{ base: "0 0 1rem", sm: "1rem 0 3rem" }}>
                     <LinkRouter to="/project/misobservatorio">
-                        <Image
+                        <ImageCover
                             src={IMAGES.other.misobservatorio}
-                            alt=""
-                            className="projectImgSm"
+                            alt="cover image for women's nonprofit"
                         />
                     </LinkRouter>
                     <Flex
@@ -87,10 +87,9 @@ export default function Projects() {
 
                 <Box margin={{ base: "0 0 1rem", sm: "1rem 0 3rem" }}>
                     <LinkRouter to="/project/ngonh">
-                        <Image
+                        <ImageCover
                             src={IMAGES.other.ngonh}
-                            alt=""
-                            className="projectImgSm"
+                            alt="cover image for 350 N H"
                         />
                     </LinkRouter>
                     <Flex
@@ -124,10 +123,9 @@ export default function Projects() {
                 {/* Project Mini4 */}
                 <Box margin={{ base: "0 0 1rem", sm: "1rem 0 3rem" }}>
                     <LinkRouter to="/project/awty">
-                        <Image
+                        <ImageCover
                             src={IMAGES.other.awty}
-                            alt=""
-                            className="projectImgSm"
+                            alt="cover image for virtual events"
                         />
                     </LinkRouter>
                     <Flex
@@ -163,10 +161,9 @@ export default function Projects() {
 
                 <Box margin={{ base: "1rem 0 1rem", sm: "1rem 0 3rem" }}>
                     <LinkRouter to="/project/katerina">
-                        <Image
+                        <ImageCover
                             src={IMAGES.other.katerina}
-                            alt=""
-                            className="projectImgSm"
+                            alt="cover image for katerina's coaching"
                         />
                     </LinkRouter>
 
@@ -202,10 +199,9 @@ export default function Projects() {
                 {/* Project Mini6 */}
                 <Box margin={{ base: "0 0 1rem", sm: "1rem 0 3rem" }}>
                     <LinkRouter to="/project/tierracristal">
-                        <Image
+                        <ImageCover
                             src={IMAGES.other.tierracristal}
-                            alt=""
-                            className="projectImgSm"
+                            alt="cover image for holistic studio"
                         />
                     </LinkRouter>
                     <Flex
@@ -259,6 +255,6 @@ export default function Projects() {
                     />
                 </LinkRouter>
             </Flex>
-        </>
+        </PageWrapper>
     );
 }
