@@ -7,9 +7,8 @@ import PageWrapper from "../components/PageWrapper";
 export default function Projects() {
     return (
         <PageWrapper>
-            <Text textStyle="h2" as="h2">
-                Branding that reflects core values <br />
-                and make companies proud.
+            <Text textStyle="h1" as="h1" w={{ base: "unset", md: "65%" }}>
+                {`Crafting branding that reflects companies' values and fills them with pride.`}
             </Text>
 
             <SimpleGrid
@@ -18,7 +17,7 @@ export default function Projects() {
                 justifyItems="center"
             >
                 {/* Project Mini1 */}
-                <Box margin={{ base: "0 0 1rem", sm: "1rem 0 3rem" }}>
+                <Box margin={{ base: "0 0 1rem", sm: "1rem 0 2rem" }}>
                     <LinkRouter to="/project/allin">
                         <ImageCover
                             src={IMAGES.other.allin}
@@ -27,31 +26,20 @@ export default function Projects() {
                     </LinkRouter>
                     <Flex
                         gap={{ base: "0", sm: "2rem" }}
-                        mt="1rem"
+                        mt="0.75rem"
                         direction={{ base: "column", sm: "row" }}
+                        w={"90%"}
                     >
                         <Text textStyle="h3" as="h3" flex="1 1 100%">
                             Key visuals & Branding for youth center.
                         </Text>
-                        {/* Behance */}
-                        {/* <Text
-                            textStyle="p"
-                            as="p"
-                            textDecoration={"underline"}
-                            flex="1 1 50%"
-                        >
-                            <Link to="https://www.behance.net/gallery/119500987/Youth-center-visual-identity">
-                                Full project on Be
-                                <ExternalLinkIcon w={6} h={6} />
-                            </Link>
-                        </Text> */}
                     </Flex>
                 </Box>
 
                 <Divider display={{ base: "block", sm: "none" }} />
 
                 {/* Project Mini2 */}
-                <Box margin={{ base: "0 0 1rem", sm: "1rem 0 3rem" }}>
+                <Box margin={{ base: "0 0 1rem", sm: "1rem 0 2rem" }}>
                     <LinkRouter to="/project/misobservatorio">
                         <ImageCover
                             src={IMAGES.other.misobservatorio}
@@ -60,24 +48,13 @@ export default function Projects() {
                     </LinkRouter>
                     <Flex
                         gap={{ base: "0", sm: "2rem" }}
-                        mt="1rem"
+                        mt="0.75rem"
                         direction={{ base: "column", sm: "row" }}
+                        w={"90%"}
                     >
                         <Text textStyle="h3" as="h3" flex="1 1 100%">
                             Brand Identity, socials, and website for NGO.
                         </Text>
-                        {/* Behance */}
-                        {/* <Text
-                            textStyle="p"
-                            as="p"
-                            textDecoration={"underline"}
-                            flex="1 1 50%"
-                        >
-                            <Link to="https://www.behance.net/gallery/111510109/Brand-Identity-Social-and-Web">
-                                Full project on Be
-                                <ExternalLinkIcon w={6} h={6} />
-                            </Link>
-                        </Text> */}
                     </Flex>
                 </Box>
 
@@ -85,7 +62,7 @@ export default function Projects() {
 
                 {/* Project Mini3 */}
 
-                <Box margin={{ base: "0 0 1rem", sm: "1rem 0 3rem" }}>
+                <Box margin={{ base: "0 0 1rem", sm: "1rem 0 2rem" }}>
                     <LinkRouter to="/project/ngonh">
                         <ImageCover
                             src={IMAGES.other.ngonh}
@@ -94,34 +71,20 @@ export default function Projects() {
                     </LinkRouter>
                     <Flex
                         gap={{ base: "0", sm: "2rem" }}
-                        mt="1rem"
+                        mt="0.75rem"
                         direction={{ base: "column", sm: "row" }}
+                        w={"90%"}
                     >
                         <Text textStyle="h3" as="h3" flex="1 1 100%">
                             Environmental Nonprofit Redesign
                         </Text>
-                        {/* Behance */}
-                        {/* <Text
-                            textStyle="p"
-                            as="p"
-                            textDecoration={"underline"}
-                            flex="1 1 50%"
-                        >
-                            <Link
-                                href="https://www.behance.net/gallery/95440585/Brand-Redesign"
-                                target="_blank"
-                            >
-                                Full project on Be{" "}
-                                <ExternalLinkIcon w={6} h={6} />
-                            </Link>
-                        </Text> */}
                     </Flex>
                 </Box>
 
                 <Divider display={{ base: "block", sm: "none" }} />
 
                 {/* Project Mini4 */}
-                <Box margin={{ base: "0 0 1rem", sm: "1rem 0 3rem" }}>
+                <Box margin={{ base: "0 0 1rem", sm: "1rem 0 2rem" }}>
                     <LinkRouter to="/project/awty">
                         <ImageCover
                             src={IMAGES.other.awty}
@@ -130,28 +93,13 @@ export default function Projects() {
                     </LinkRouter>
                     <Flex
                         gap={{ base: "0", sm: "2rem" }}
-                        mt="1rem"
+                        mt="0.75rem"
                         direction={{ base: "column", sm: "row" }}
+                        w={"90%"}
                     >
                         <Text textStyle="h3" as="h3" flex="1 1 100%">
                             Future of creativity Online Event
                         </Text>
-                        {/* Behance */}
-                        {/* <Text
-                            textStyle="p"
-                            as="p"
-                            textDecoration={"underline"}
-                            flex="1 1 100%"
-                        >
-                            
-                            <Link
-                                href="https://www.behance.net/gallery/189478223/Branded-social-media-for-online-event"
-                                target="_blank"
-                            >
-                                Full project on Be{" "}
-                                <ExternalLinkIcon w={6} h={6} />
-                            </Link>
-                        </Text> */}
                     </Flex>
                 </Box>
 
@@ -159,7 +107,7 @@ export default function Projects() {
 
                 {/* Project Mini5 */}
 
-                <Box margin={{ base: "1rem 0 1rem", sm: "1rem 0 3rem" }}>
+                <Box margin={{ base: "1rem 0 1rem", sm: "1rem 0 2rem" }}>
                     <LinkRouter to="/project/katerina">
                         <ImageCover
                             src={IMAGES.other.katerina}
@@ -169,35 +117,21 @@ export default function Projects() {
 
                     <Flex
                         gap={{ base: "0", sm: "2rem" }}
-                        mt="1rem"
+                        mt="0.75rem"
                         direction={{ base: "column", sm: "row" }}
+                        w={"90%"}
                     >
                         <Text textStyle="h3" as="h3" flex="1 1 100%">
                             Instagram communication strategy for Lifestyle
                             coaching.
                         </Text>
-                        {/* Behance */}
-                        {/* <Text
-                            textStyle="p"
-                            as="p"
-                            textDecoration={"underline"}
-                            flex="1 1 50%"
-                        >
-                            <Link
-                                href="https://www.behance.net/gallery/139059395/Lifestyle-coaching-Intagram-grid-posts"
-                                target="_blank"
-                            >
-                                Full project on Be
-                                <ExternalLinkIcon w={6} h={6} />
-                            </Link>
-                        </Text> */}
                     </Flex>
                 </Box>
 
                 <Divider display={{ base: "block", sm: "none" }} />
 
                 {/* Project Mini6 */}
-                <Box margin={{ base: "0 0 1rem", sm: "1rem 0 3rem" }}>
+                <Box margin={{ base: "0 0 1rem", sm: "1rem 0 2rem" }}>
                     <LinkRouter to="/project/tierracristal">
                         <ImageCover
                             src={IMAGES.other.tierracristal}
@@ -206,27 +140,13 @@ export default function Projects() {
                     </LinkRouter>
                     <Flex
                         gap={{ base: "0", sm: "2rem" }}
-                        mt="1rem"
+                        mt="0.75rem"
                         direction={{ base: "column", sm: "row" }}
+                        w={"90%"}
                     >
                         <Text textStyle="h3" as="h3" flex="1 1 100%">
                             Responsive brand for Holistic Studio.
                         </Text>
-                        {/* Behance */}
-                        {/* <Text
-                            textStyle="p"
-                            as="p"
-                            textDecoration={"underline"}
-                            flex="1 1 50%"
-                        >
-                            <Link
-                                href="https://www.behance.net/gallery/92450313/Responsive-Branding"
-                                target="_blank"
-                            >
-                                Full project on Be{" "}
-                                <ExternalLinkIcon w={6} h={6} />
-                            </Link>
-                        </Text> */}
                     </Flex>
                 </Box>
             </SimpleGrid>

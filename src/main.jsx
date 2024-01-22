@@ -28,6 +28,12 @@ const theme = extendTheme({
         },
     },
     textStyles: {
+        h1: {
+            fontFamily: "Montserrat Alternates, sans-serif",
+            fontSize: ["2.25rem", "3rem"],
+            lineHeight: ["2.5rem", "3rem"],
+            fontWeight: "800",
+        },
         h2: {
             fontFamily: "Montserrat Alternates, sans-serif",
             fontSize: ["1.75rem", "2rem"],
@@ -35,10 +41,10 @@ const theme = extendTheme({
             fontWeight: "700",
         },
         h3: {
-            fontFamily: "Montserrat Alternates, sans-serif",
+            // fontFamily: "Montserrat Alternates, sans-serif",
             fontSize: ["1.25rem", "1.5rem"],
             lineHeight: ["2rem", "2.25rem"],
-            fontWeight: "600",
+            fontWeight: "500",
         },
         p: {
             fontSize: ["1.25rem", "1.40rem"],
@@ -47,7 +53,7 @@ const theme = extendTheme({
             color: "blackAlpha.800",
         },
         a: {
-            fontSize: ["1rem", "1.12rem"],
+            fontSize: ["1rem", "1rem"],
             lineHeight: ["1.75rem", "1.75rem"],
             fontWeight: "500",
         },

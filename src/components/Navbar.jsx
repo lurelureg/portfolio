@@ -5,18 +5,19 @@ export default function Navbar() {
     return (
         <>
             <Flex
-                justifyContent="space-between"
+                justifyContent={{ base: "center", sm: "space-between" }}
+                gap={{ base: "1em", sm: "unset" }}
                 h={"8rem"}
                 direction={{ base: "column", sm: "row" }}
                 alignItems={{ base: "center", sm: "unset" }}
                 margin={"2rem 0"}
             >
-                <NavLink className="link" to="/">
+                <NavLink className="" to="/">
                     <Text textStyle="a" as="span">
-                        Lucrecia Garino
+                        <strong>Lucrecia Garino</strong>
                     </Text>
                 </NavLink>
-                <div>
+                <Flex gap={"1.5em"}>
                     <NavLink className="link" to="/">
                         <Text textStyle="a" as="span">
                             Projects
@@ -32,7 +33,7 @@ export default function Navbar() {
                             About
                         </Text>
                     </NavLink>
-                </div>
+                </Flex>
             </Flex>
         </>
     );
