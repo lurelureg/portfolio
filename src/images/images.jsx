@@ -65,41 +65,48 @@ const IMAGES = {
     },
     projectGalleries: {
         katerina: [
-            new URL("./other/katerina.png", import.meta.url).href,
-            new URL("./other/katerina.png", import.meta.url).href,
-            new URL("./other/katerina.png", import.meta.url).href,
-            new URL("./other/katerina.png", import.meta.url).href,
+            new URL("./other/katerina/card.png", import.meta.url).href,
+            new URL("./other/katerina/ads.png", import.meta.url).href,
+            new URL("./other/katerina/cards.png", import.meta.url).href,
+            new URL("./other/katerina/totebag.png", import.meta.url).href,
         ],
         misobservatorio: [
-            new URL("./other/misobservatorio.png", import.meta.url).href,
-            new URL("./other/misobservatorio.png", import.meta.url).href,
-            new URL("./other/misobservatorio.png", import.meta.url).href,
-            new URL("./other/misobservatorio.png", import.meta.url).href,
+            new URL("./other/misobservatorio/folleto.png", import.meta.url)
+                .href,
+            new URL("./other/misobservatorio/totebag.png", import.meta.url)
+                .href,
+            new URL("./other/misobservatorio/instagram.png", import.meta.url)
+                .href,
+            new URL("./other/misobservatorio/posters.png", import.meta.url)
+                .href,
         ],
         allin: [
+            new URL("./other/allin/instagram.png", import.meta.url).href,
+            // new URL("./other/allin/notebook.png", import.meta.url).href,
             new URL("./other/allin/tearoff.png", import.meta.url).href,
             new URL("./other/allin/mobile.png", import.meta.url).href,
-            new URL("./other/allin/instagram.png", import.meta.url).href,
-            new URL("./other/allin/notebook.png", import.meta.url).href,
-            new URL("./other/allin/poster.png", import.meta.url).href,
+            new URL("./other/allin/animation.gif", import.meta.url).href,
         ],
         tierracristal: [
-            new URL("./other/tierracristal.png", import.meta.url).href,
-            new URL("./other/tierracristal.png", import.meta.url).href,
-            new URL("./other/tierracristal.png", import.meta.url).href,
-            new URL("./other/tierracristal.png", import.meta.url).href,
+            new URL("./other/tierracristal/membership.png", import.meta.url)
+                .href,
+            new URL("./other/tierracristal/letterpress.png", import.meta.url)
+                .href,
+            new URL("./other/tierracristal/stickers.png", import.meta.url).href,
+            new URL("./other/tierracristal/brochure.png", import.meta.url).href,
         ],
         ngonh: [
-            new URL("./other/ngonh/mailer.png", import.meta.url).href,
-            new URL("./other/ngonh/poster.png", import.meta.url).href,
             new URL("./other/ngonh/tote.png", import.meta.url).href,
-            new URL("./other/ngonh/tshirt.png", import.meta.url).href,
+            new URL("./other/ngonh/poster.png", import.meta.url).href,
+            new URL("./other/ngonh/mailer.png", import.meta.url).href,
+            new URL("./other/ngonh/animation.gif", import.meta.url).href,
         ],
         awty: [
-            new URL("./other/awty.png", import.meta.url).href,
-            new URL("./other/awty.png", import.meta.url).href,
-            new URL("./other/awty.png", import.meta.url).href,
-            new URL("./other/awty.png", import.meta.url).href,
+            new URL("./other/awty/insta.png", import.meta.url).href,
+            new URL("./other/awty/brand.png", import.meta.url).href,
+            // new URL("./other/awty/poster.png", import.meta.url).href,
+            new URL("./other/awty/speakers.png", import.meta.url).href,
+            new URL("./other/awty/postsgif.gif", import.meta.url).href,
         ],
     },
 };
