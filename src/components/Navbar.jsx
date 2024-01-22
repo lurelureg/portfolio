@@ -11,7 +11,7 @@ export default function Navbar() {
                 alignItems={{ base: "center", sm: "unset" }}
                 margin={"2rem 0"}
             >
-                <NavLink to="/" className="logoimg">
+                <NavLink className="link" to="/">
                     <Text textStyle="a" as="span">
                         Lucrecia Garino
                     </Text>

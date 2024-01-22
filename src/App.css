@@ -24,10 +24,10 @@ p {
     transition: filter 300ms;
 }
 .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 2em #095699);
 }
 .socialIcon:hover {
-    filter: drop-shadow(0 0 1em #61dafbc0);
+    filter: drop-shadow(0 0 1em #0087ff);
 }
 
 .logoimg {
@@ -37,11 +37,11 @@ p {
     transition: filter 300ms;
 }
 .logoimg:hover {
-    filter: drop-shadow(0 0 0.7em #80c5fd6d);
+    filter: drop-shadow(0 0 0.7em #116dbd);
 }
 
 a p:hover {
-    color: #00a3c4;
+    color: #0f8fff;
 }
 
 .link {
@@ -54,9 +54,9 @@ a p:hover {
 }
 
 .link:hover {
-    color: #76e4f7;
+    color: #0087ff;
 }
 
 a.active {
-    color: #00a3c4;
+    color: #0087ff;
 }
