@@ -1,13 +1,14 @@
-import { Image, SimpleGrid, Text, Center } from "@chakra-ui/react";
+import { SimpleGrid, Text, Center } from "@chakra-ui/react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import IMAGES from "../images/images";
 import PageWrapper from "../components/PageWrapper";
 
 const ImageGallery = () => {
     return (
         <PageWrapper>
-            <Text textStyle="h2" as="h2">
-                Welcome to the Gallery, here you can find some of the things I
-                do.
+            <Text textStyle="h2" as="h2" w={{ base: "unset", sm: "65%" }}>
+                Welcome to the Gallery, <br />
+                here you can find some of the things I do.
             </Text>
 
             <SimpleGrid
@@ -17,7 +18,7 @@ const ImageGallery = () => {
             >
                 {IMAGES.gallery.map((imagePath, index) => (
                     <Center key={index}>
-                        <Image src={imagePath} />
+                        <LazyLoadImage src={imagePath} />
                     </Center>
                 ))}
             </SimpleGrid>
