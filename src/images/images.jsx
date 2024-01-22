@@ -1,43 +1,67 @@
 const IMAGES = {
     gallery: [
-        new URL("./gallery/4b421_md.png", import.meta.url).href,
-        new URL("./gallery/005-DriverlessCar_md.png", import.meta.url).href,
-        new URL("./gallery/abundance_md.png", import.meta.url).href,
-        new URL("./gallery/ALLIN_fondosmall_md.png", import.meta.url).href,
-        new URL("./gallery/AWTY_Dribbble_md.png", import.meta.url).href,
-        new URL("./gallery/billboard_md.png", import.meta.url).href,
-        new URL("./gallery/brand_grill_md.png", import.meta.url).href,
-        new URL("./gallery/chinatown_md.png", import.meta.url).href,
-        new URL("./gallery/Circusbear_md.png", import.meta.url).href,
-        new URL("./gallery/cny_edit_md.png", import.meta.url).href,
-        new URL("./gallery/collage_toast_md.png", import.meta.url).href,
-        new URL("./gallery/cuyes_nuevo_amanecerB_md.png", import.meta.url).href,
-        new URL("./gallery/Egypt_palette_md.png", import.meta.url).href,
-        new URL("./gallery/fondo_md.png", import.meta.url).href,
-        new URL("./gallery/green_md.png", import.meta.url).href,
-        new URL("./gallery/H_Dribbble_md.png", import.meta.url).href,
-        new URL("./gallery/Havi_new_md.png", import.meta.url).href,
-        new URL("./gallery/insurance_md.png", import.meta.url).href,
-        new URL("./gallery/Invisible_md.png", import.meta.url).href,
-        new URL("./gallery/kat_md.png", import.meta.url).href,
-        new URL("./gallery/Logo-Measures-Final_md.gif", import.meta.url).href,
-        new URL("./gallery/Logos_simple_md.png", import.meta.url).href,
-        new URL("./gallery/MA_I436653full_md.png", import.meta.url).href,
-        new URL("./gallery/madefordigital2_md.png", import.meta.url).href,
-        new URL("./gallery/mixed_001_md.gif", import.meta.url).href,
-        new URL("./gallery/mixed_002_md.gif", import.meta.url).href,
-        new URL("./gallery/mixed_003_md.png", import.meta.url).href,
-        new URL("./gallery/mixed_005_md.png", import.meta.url).href,
-        new URL("./gallery/mixed_006_md.png", import.meta.url).href,
-        new URL("./gallery/mixed_008_md.png", import.meta.url).href,
-        new URL("./gallery/mixed_009_md.png", import.meta.url).href,
-        new URL("./gallery/Moow_md.png", import.meta.url).href,
-        new URL("./gallery/orange_md.png", import.meta.url).href,
-        new URL("./gallery/Round_md.gif", import.meta.url).href,
-        new URL("./gallery/PearGrain_md.png", import.meta.url).href,
-        new URL("./gallery/Ski_mountain_md.png", import.meta.url).href,
-        new URL("./gallery/Social_keyvisual_md.png", import.meta.url).href,
-        new URL("./gallery/UI_countdown_md.png", import.meta.url).href,
+        // collage
+        new URL("./gallery/collage/4b421_md.png", import.meta.url).href,
+        new URL("./gallery/collage/abundance_md.png", import.meta.url).href,
+        new URL("./gallery/collage/chinatown_md.png", import.meta.url).href,
+        new URL("./gallery/collage/collage_toast_md.png", import.meta.url).href,
+        new URL(
+            "./gallery/collage/cuyes_nuevo_amanecerB_md.png",
+            import.meta.url
+        ).href,
+        new URL("./gallery/collage/green_md.png", import.meta.url).href,
+        new URL("./gallery/collage/mixed_003_md.png", import.meta.url).href,
+        new URL("./gallery/collage/mixed_009_md.png", import.meta.url).href,
+        new URL("./gallery/collage/MA_I436653full_md.png", import.meta.url)
+            .href,
+        new URL("./gallery/collage/mixed_005_md.png", import.meta.url).href,
+        new URL("./gallery/collage/orange_md.png", import.meta.url).href,
+
+        // illustration
+        new URL("./gallery/illustration/Circusbear_md.png", import.meta.url)
+            .href,
+        new URL("./gallery/illustration/mixed_001_md.gif", import.meta.url)
+            .href,
+        new URL("./gallery/illustration/mixed_002_md.gif", import.meta.url)
+            .href,
+        new URL("./gallery/illustration/mixed_006_md.png", import.meta.url)
+            .href,
+        new URL("./gallery/illustration/PearGrain_md.png", import.meta.url)
+            .href,
+
+        // keyvisual
+        new URL("./gallery/keyvisual/H_Dribbble_md.png", import.meta.url).href,
+        new URL(
+            "./gallery/keyvisual/Logo-Measures-Final_md.gif",
+            import.meta.url
+        ).href,
+        new URL("./gallery/keyvisual/mixed_008_md.png", import.meta.url).href,
+        new URL("./gallery/keyvisual/Invisible_md.png", import.meta.url).href,
+        new URL("./gallery/keyvisual/Round_md.gif", import.meta.url).href,
+        new URL("./gallery/keyvisual/AWTY_Dribbble_md.png", import.meta.url)
+            .href,
+        new URL("./gallery/keyvisual/ALLIN_fondosmall_md.png", import.meta.url)
+            .href,
+        new URL("./gallery/keyvisual/fondo_md.png", import.meta.url).href,
+        new URL("./gallery/keyvisual/billboard_md.png", import.meta.url).href,
+        new URL("./gallery/keyvisual/Egypt_palette_md.png", import.meta.url)
+            .href,
+        new URL("./gallery/keyvisual/kat_md.png", import.meta.url).href,
+        new URL("./gallery/keyvisual/Social_keyvisual_md.png", import.meta.url)
+            .href,
+        new URL("./gallery/keyvisual/UI_countdown_md.png", import.meta.url)
+            .href,
+        // logo
+        new URL("./gallery/logo/005-DriverlessCar_md.png", import.meta.url)
+            .href,
+        new URL("./gallery/logo/insurance_md.png", import.meta.url).href,
+        new URL("./gallery/logo/cny_edit_md.png", import.meta.url).href,
+        new URL("./gallery/logo/Havi_new_md.png", import.meta.url).href,
+        new URL("./gallery/logo/brand_grill_md.png", import.meta.url).href,
+        new URL("./gallery/logo/Logos_simple_md.png", import.meta.url).href,
+        new URL("./gallery/logo/Moow_md.png", import.meta.url).href,
+        new URL("./gallery/logo/madefordigital2_md.png", import.meta.url).href,
+        new URL("./gallery/logo/Ski_mountain_md.png", import.meta.url).href,
     ],
     other: {
         footergallerybg730: new URL(
