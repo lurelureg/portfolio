@@ -60,3 +60,17 @@ a p:hover {
 a.active {
     color: #0087ff;
 }
+
+.wrapChildren {
+    flex: 1 0 auto;
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+    .wrapContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .wrapChildren {
+        flex: 0 0 48%;
+    }
+}

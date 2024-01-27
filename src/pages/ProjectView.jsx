@@ -145,31 +145,32 @@ export default function ProjectView() {
                     {projectData.text1}
                 </Text>
                 <Flex
+                    className="wrapContainer"
                     direction={{ base: "column", md: "row" }}
                     w="100%"
                     align="start"
                     gap={6}
                     margin={"5rem 0"}
                 >
-                    <Box flex="1 0 auto">
+                    <Box className="wrapChildren">
                         <Text textStyle="p" as="p">
                             <strong>Client</strong> <br />
                             {projectData.client}
                         </Text>
                     </Box>
-                    <Box flex="1 0 auto">
+                    <Box className="wrapChildren">
                         <Text textStyle="p" as="p">
                             <strong>Industry</strong> <br />
                             {projectData.industry}
                         </Text>
                     </Box>
-                    <Box flex="1 0 auto">
+                    <Box className="wrapChildren">
                         <Text textStyle="p" as="p">
                             <strong>Service</strong> <br />
                             {projectData.service}
                         </Text>
                     </Box>
-                    <Box flex="1 0 auto">
+                    <Box className="wrapChildren">
                         <Text textStyle="p" as="p">
                             <strong>Deliverables</strong> <br />
                             {projectData.deliverables}
