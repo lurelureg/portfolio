@@ -7,14 +7,13 @@ export default function Navbar() {
             <Flex
                 justifyContent={{ base: "center", sm: "space-between" }}
                 gap={{ base: "1em", sm: "unset" }}
-                h={"8rem"}
                 direction={{ base: "column", sm: "row" }}
                 alignItems={{ base: "center", sm: "unset" }}
-                margin={"2rem 0"}
+                margin={"2rem 0 8rem"}
             >
-                <NavLink className="" to="/">
-                    <Text textStyle="a" as="span">
-                        <strong>Lucrecia Garino</strong>
+                <NavLink id="logoname" to="/">
+                    <Text textStyle="a" as="span" fontWeight={"600"}>
+                        Lucrecia Garino
                     </Text>
                 </NavLink>
                 <Flex gap={"1.5em"}>

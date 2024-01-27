@@ -5,6 +5,14 @@
     margin: 0 auto;
 }
 
+#logoname {
+    color: black;
+}
+
+#logoname:hover {
+    color: #0f8fff;
+}
+
 h2,
 h1 {
     margin: 0rem 0 2rem;
@@ -18,27 +26,8 @@ p {
     white-space: pre-line;
 }
 
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-}
-.logo:hover {
-    filter: drop-shadow(0 0 2em #095699);
-}
 .socialIcon:hover {
     filter: drop-shadow(0 0 1em #0087ff);
-}
-
-.logoimg {
-    height: 44px;
-    padding: 0;
-    will-change: filter;
-    transition: filter 300ms;
-}
-.logoimg:hover {
-    filter: drop-shadow(0 0 0.7em #116dbd);
 }
 
 a p:hover {
