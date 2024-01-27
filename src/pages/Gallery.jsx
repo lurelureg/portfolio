@@ -9,7 +9,11 @@ const ImageGallery = () => {
 
     return (
         <PageWrapper>
-            <Text textStyle="h2" as="h2" w={{ base: "unset", sm: "65%" }}>
+            <Text
+                textStyle="h2"
+                as="h2"
+                w={{ base: "unset", md: "80%", lg: "65%" }}
+            >
                 Welcome to the Gallery, <br />
                 get a glimpse of my personal projects.
             </Text>

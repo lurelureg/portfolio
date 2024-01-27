@@ -4,14 +4,26 @@ import PageWrapper from "../components/PageWrapper";
 export default function About() {
     return (
         <PageWrapper>
-            <Text textStyle="h2" as="h2" w={{ base: "unset", sm: "70%" }}>
+            <Text
+                textStyle="h2"
+                as="h2"
+                w={{ base: "unset", md: "80%", lg: "65%" }}
+            >
                 Lucrecia Garino is a multifaceted designer with a focus on
                 Branding, Creative Strategy, and Digital Mediums.
             </Text>
-            <Text textStyle="h3" as="h3" w={{ base: "unset", sm: "70%" }}>
+            <Text
+                textStyle="h3"
+                as="h3"
+                w={{ base: "unset", md: "80%", lg: "65%" }}
+            >
                 <small>Currently based in Berlin. 🐻</small>
             </Text>
-            <Text textStyle="p" as="p" w={{ base: "unset", sm: "70%" }}>
+            <Text
+                textStyle="p"
+                as="p"
+                w={{ base: "unset", md: "75%", lg: "65%" }}
+            >
                 As a seasoned Brand Strategist and Communication Designer since
                 2010, I&apos;ve been at the forefront of crafting compelling
                 brand identities and designing impactful visual communication

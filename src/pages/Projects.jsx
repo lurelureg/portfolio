@@ -7,7 +7,11 @@ import PageWrapper from "../components/PageWrapper";
 export default function Projects() {
     return (
         <PageWrapper>
-            <Text textStyle="h1" as="h1" w={{ base: "unset", md: "65%" }}>
+            <Text
+                textStyle="h1"
+                as="h1"
+                w={{ base: "unset", md: "80%", lg: "65%" }}
+            >
                 {`Crafting branding that reflects companies' values and fills them with pride.`}
             </Text>
 
