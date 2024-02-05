@@ -152,7 +152,7 @@ export default function ProjectView() {
     useEffect(() => {
         const data = projectsList.find((project) => project.id === projectId);
         setProjectData(data);
-    }, []);
+    }, [projectId]);
 
     useEffect(() => {
         const data = projectsList.find(
@@ -162,7 +162,7 @@ export default function ProjectView() {
         window.history.replaceState(
             null,
             currentProjectId,
-            `/${currentProjectId}`
+            `/project/${currentProjectId}`
         );
     }, [currentProjectId]);
 
