@@ -99,7 +99,7 @@ export default function Footer() {
                 </Link>
 
                 <Text textStyle="small" as="p" m={0}>
-                    Copyright © Lucrecia Garino 2023. All rights reserved.
+                    Coded by myself. Constantly iterating. © 2004
                 </Text>
             </Flex>
         </>

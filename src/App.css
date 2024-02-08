@@ -63,3 +63,7 @@ a.active {
         flex: 0 0 48%;
     }
 }
+
+#chakra-modal-drawer {
+    height: 50vh;
+}
