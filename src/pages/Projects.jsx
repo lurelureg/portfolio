@@ -161,7 +161,7 @@ export default function Projects() {
                 justifyContent="space-between"
                 mt={{ base: "5rem", sm: "10rem" }}
             >
-                <Text textStyle="h2" as="h2">
+                <Text textStyle="h2" as="h2" color={"black"}>
                     Visit the&nbsp;
                     <LinkRouter to="/gallery" className="link-underlined">
                         Gallery

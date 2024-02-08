@@ -43,6 +43,8 @@ const ImageGallery = () => {
             >
                 <Flex flexBasis={0} flexGrow={1}>
                     <Button
+                        variant="solid"
+                        colorScheme="red"
                         width="100%"
                         p={".5em 1em"}
                         onClick={() => setFilterCategory("")}
@@ -53,6 +55,8 @@ const ImageGallery = () => {
 
                 <Flex flexBasis={0} flexGrow={1}>
                     <Button
+                        variant="solid"
+                        colorScheme="twitter"
                         width="100%"
                         p={".5em 1em"}
                         onClick={() => setFilterCategory("logo")}
@@ -63,6 +67,8 @@ const ImageGallery = () => {
 
                 <Flex flexBasis={0} flexGrow={1}>
                     <Button
+                        variant="solid"
+                        colorScheme="green"
                         width="100%"
                         p={".5em 1em"}
                         onClick={() => setFilterCategory("collage")}
@@ -73,6 +79,8 @@ const ImageGallery = () => {
 
                 <Flex flexBasis={0} flexGrow={1}>
                     <Button
+                        variant="solid"
+                        colorScheme="orange"
                         width="100%"
                         p={".5em 1em"}
                         onClick={() => setFilterCategory("illustration")}
@@ -83,6 +91,8 @@ const ImageGallery = () => {
 
                 <Flex flexBasis={0} flexGrow={1}>
                     <Button
+                        variant="solid"
+                        colorScheme="purple"
                         width="100%"
                         p={".5em 1em"}
                         onClick={() => setFilterCategory("keyvisual")}

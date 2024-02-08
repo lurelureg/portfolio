@@ -16,6 +16,7 @@
 h2,
 h1 {
     margin: 0rem 0 2rem;
+    color: #006ce7;
 }
 
 h3 {
@@ -27,7 +28,7 @@ p {
 }
 
 .socialIcon:hover {
-    filter: drop-shadow(0 0 1em #0087ff);
+    filter: drop-shadow(0 0 0.15em #0088ff25);
 }
 
 a p:hover {

@@ -11,7 +11,6 @@ const IMAGES = {
         new URL("./gallery/collage/collage8.png", import.meta.url).href,
         new URL("./gallery/collage/collage9.png", import.meta.url).href,
         new URL("./gallery/collage/collage10.png", import.meta.url).href,
-        new URL("./gallery/collage/collage11.png", import.meta.url).href,
 
         // illustration
         new URL("./gallery/illustration/illustration2.png", import.meta.url)
