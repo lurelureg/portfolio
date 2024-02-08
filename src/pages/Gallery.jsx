@@ -6,6 +6,22 @@ import { useState } from "react";
 
 const ImageGallery = () => {
     const [filterCategory, setFilterCategory] = useState("");
+    const shuffleArray = (array) => {
+        let currentIndex = array.length,
+            temporaryValue,
+            randomIndex;
+
+        while (0 !== currentIndex) {
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+    };
 
     return (
         <PageWrapper>
@@ -15,7 +31,7 @@ const ImageGallery = () => {
                 w={{ base: "unset", md: "80%", lg: "65%" }}
             >
                 Welcome to the Gallery, <br />
-                get a glimpse of my personal projects.
+                get a glimpse of other projects.
             </Text>
 
             <Flex
@@ -81,7 +97,7 @@ const ImageGallery = () => {
                 spacing="2rem"
                 justifyItems="center"
             >
-                {IMAGES.gallery
+                {shuffleArray(IMAGES.gallery)
                     .filter((imagePath) => imagePath.includes(filterCategory))
                     .map((imagePath, index) => (
                         <Center key={index}>
