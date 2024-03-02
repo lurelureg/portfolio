@@ -16,6 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
 import NotFound from "./NotFound";
 import PageWrapper from "../components/PageWrapper";
 import { projectsList } from "../data/projectsList";
@@ -43,6 +44,7 @@ export default function ProjectView() {
     }, [currentProjectId]);
 
     const navigatePrevious = () => {
+        scroll.scrollToTop();
         const currentIndex = projectsList.findIndex(
             (p) => p.id === currentProjectId
         );
@@ -52,6 +54,7 @@ export default function ProjectView() {
     };
 
     const navigateNext = () => {
+        scroll.scrollToTop();
         const currentIndex = projectsList.findIndex(
             (p) => p.id === currentProjectId
         );

@@ -1,5 +1,6 @@
 import { Flex, Text, Image, Link, useToast } from "@chakra-ui/react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { animateScroll as scroll } from "react-scroll";
 import IMAGES from "../images/images";
 
 export default function Footer() {
@@ -92,7 +93,7 @@ export default function Footer() {
                     </Link>
                 </Flex>
 
-                <Link className="link" href="#top">
+                <Link className="link" onClick={scroll.scrollToTop}>
                     <Text textStyle="a" as="span">
                         Back to top ↑
                     </Text>
