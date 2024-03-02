@@ -76,7 +76,7 @@ const IMAGES = {
     projectGalleries: {
         katerina: [
             new URL("./other/katerina/card.png", import.meta.url).href,
-            new URL("./other/katerina/ads.png", import.meta.url).href,
+            new URL("./other/katerina/ad.png", import.meta.url).href,
             new URL("./other/katerina/cards.png", import.meta.url).href,
             new URL("./other/katerina/totebag.png", import.meta.url).href,
         ],
