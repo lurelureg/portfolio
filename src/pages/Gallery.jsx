@@ -5,6 +5,7 @@ import IMAGES from "../images/images";
 import { useMemo, useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import { Zoom } from "yet-another-react-lightbox/plugins";
 
 const ImageGallery = () => {
     const [filterCategory, setFilterCategory] = useState("");
@@ -136,6 +137,7 @@ const ImageGallery = () => {
                 open={isOpen}
                 close={() => setIsOpen(false)}
                 slides={currentImages}
+                plugins={[Zoom]}
             />
         </PageWrapper>
     );
