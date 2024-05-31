@@ -2,10 +2,15 @@ import PageWrapper from "../components/PageWrapper";
 import { Flex, SimpleGrid, Text, Center, Button } from "@chakra-ui/react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import IMAGES from "../images/images";
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 const ImageGallery = () => {
     const [filterCategory, setFilterCategory] = useState("");
+    const [index, setIndex] = useState(-1);
+    const [isOpen, setIsOpen] = useState(false);
+
     const shuffleArray = (array) => {
         let currentIndex = array.length,
             temporaryValue,
@@ -22,6 +27,17 @@ const ImageGallery = () => {
 
         return array;
     };
+
+    const currentImages = useMemo(() =>
+        shuffleArray(IMAGES.gallery)
+            .filter((imagePath) => imagePath.includes(filterCategory))
+            .map(image => { return { src: image } })
+    , [filterCategory])
+
+    const handleImageClick = (selectedIndex) => {
+        setIndex(selectedIndex)
+        setIsOpen(true)
+    }
 
     return (
         <PageWrapper>
@@ -107,14 +123,20 @@ const ImageGallery = () => {
                 spacing="2rem"
                 justifyItems="center"
             >
-                {shuffleArray(IMAGES.gallery)
-                    .filter((imagePath) => imagePath.includes(filterCategory))
-                    .map((imagePath, index) => (
-                        <Center key={index}>
-                            <LazyLoadImage src={imagePath} />
+                {
+                    currentImages.map((image, index) => (
+                        <Center key={index} cursor="pointer">
+                            <LazyLoadImage src={image.src} onClick={() => handleImageClick(index)} />
                         </Center>
-                    ))}
+                    ))
+                }
             </SimpleGrid>
+            <Lightbox
+                index={index}
+                open={isOpen}
+                close={() => setIsOpen(false)}
+                slides={currentImages}
+            />
         </PageWrapper>
     );
 };
