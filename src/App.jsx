@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectView from "./pages/ProjectView";
 import ScrollToTop from "./components/ScrollToTop";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                 </Routes>
             </Flex>
             <ScrollToTop />
+            <Analytics/>
             <Footer />
         </>
     );
