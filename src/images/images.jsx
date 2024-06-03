@@ -64,6 +64,7 @@ const IMAGES = {
         awty: new URL("./other/awty.png", import.meta.url).href,
         project1: new URL("./other/project1.png", import.meta.url).href,
         project2: new URL("./other/project2.png", import.meta.url).href,
+        bauhaus_story_gif: new URL("./other/bauhaus_story_gif.gif", import.meta.url).href,
     },
     socials: {
         email: new URL("./socials/email.svg", import.meta.url).href,

@@ -1,43 +1,62 @@
-import { Text, Box, Flex } from "@chakra-ui/react";
+import { Text, Box, Flex, Image } from "@chakra-ui/react";
 import PageWrapper from "../components/PageWrapper";
+import IMAGES from "../images/images";
 
 export default function About() {
     return (
         <PageWrapper>
-            
-            <Text color={"#1b1b1bc9"}
-                textStyle="h3"
-                as="h3"
-                w={{ base: "unset", md: "80%", lg: "65%" }}
+            <Flex 
+                direction={{ base: "column", lg: "row" }}
+                justifyContent="space-between"
+                gap={"2rem"}
             >
-                <small>
-                    Hola! Hi! Salut! Ciao! Moin! Ahoy! Namaste! <br />
-                    </small>
+            <Box 
+            w={{ base: "unset", md: "80%", lg: "65%" }}
+            >            
+                <Text color={"#1b1b1bc9"}
+                    textStyle="h3"
+                    as="h3"
+                >
+                    <small>
+                        Hola! Hi! Salut! Ciao! Moin! Ahoy! Namaste! <br />
+                        </small>
 
-            </Text>
-            <Text
-                textStyle="h2"
-                as="h2"
-                w={{ base: "unset", md: "80%", lg: "65%" }}
-            >
-                I&apos;m Lucrecia, a designer based in Berlin. <br />I transform businesses with strategic branding and engaging visuals, blending creativity and optimization.
-            </Text>
-
-            <Text
-                textStyle="p"
-                as="p"
-                w={{ base: "unset", md: "75%", lg: "65%" }}
-            >
-With over 10 years as a visual designer, I&apos;ve honed my craft across sectors like retail, banking, wholesale, healthcare, and civic organizations. <br />I specialize in re-branding, leading brand workshops, and <strong>bridging business goals with creativity.</strong> My approach results in companies that are proud and eager to share their work.<br /><br /> Born into a creative family, I&apos;m curious and proactive. My background includes Graphic & Advertising Design and Human-Centered Design. I&apos;ve expanded my expertise through certifications in <strong> creativity, UX/UI, and Web Development </strong> Bootcamps. Continuous learning is fueled by my passion for multidisciplinary collaboration.<br /><br />Beyond the screen I&apos;m an avid explorer of Berlin, you&apos;ll find me taking pictures of its flora and architecture, lost in art galleries and museums or with my concert buddies. <br /><br />I&apos;m always seeking new challenges for new challenges or opportunities to collaborate, so please get in touch, even for a short chat.
-<br /><strong>Let&apos;s make things happen!</strong>
-            </Text>
+                </Text>
+                <Text
+                    textStyle="h2"
+                    as="h2"
+                    
+                >
+                    I&apos;m Lucrecia, a designer based in Berlin. <br />I transform businesses with strategic branding and engaging visuals, blending creativity and optimization.
+                </Text>
+                <Text
+                    textStyle="p"
+                    as="p"
+                >
+    With over 10 years as a visual designer, I&apos;ve honed my craft across sectors like retail, banking, wholesale, healthcare, and civic organizations. <br />I specialize in re-branding, leading brand workshops, and <strong>bridging business goals with creativity.</strong> My approach results in companies that are proud and eager to share their work.<br /><br /> Born into a creative family, I&apos;m curious and proactive. My background includes Graphic & Advertising Design and Human-Centered Design. I&apos;ve expanded my expertise through certifications in <strong> creativity, UX/UI, and Web Development </strong> Bootcamps. Continuous learning is fueled by my passion for multidisciplinary collaboration.<br /><br />Beyond the screen I&apos;m an avid explorer of Berlin, you&apos;ll find me taking pictures of its flora and architecture, lost in a Kino, art gallery or museum. <br /><br />I&apos;m always seeking new challenges for new challenges or opportunities to collaborate, so please get in touch, even for a short chat.
+    <br /><strong>Let&apos;s make things happen!</strong>
+                </Text>
+                </Box>
+            <Box
+                w={{ base: "100%", sm: "30%"}}
+                mt={{ base: "5rem", sm: "unset" }}
+                
+                >   
+                <Image
+                    m={{ base: "0 auto", sm: "0 0 0 auto" }}
+                    src={IMAGES.other.bauhaus_story_gif}
+                    alt="It is me, playing with a paper cut created at the bauhaus paper workshop at gropiusbau, berlin"
+                />
+            </Box>
+            </Flex>
 
             <Flex
                 direction={{ base: "column", md: "row" }}
                 w="100%"
                 align="start"
                 gap={6}
-                margin={"5rem 0"}
+                margin={{ base: "2rem 0 5rem", md: "5rem 0" }}
+                
             >
                 <Box flex="1 0 auto">
                     <Text>
@@ -74,6 +93,7 @@ With over 10 years as a visual designer, I&apos;ve honed my craft across sectors
                         Google One Drive
                     </Text>
                 </Box>
+
             </Flex>
         </PageWrapper>
     );
