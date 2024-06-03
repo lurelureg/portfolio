@@ -17,9 +17,8 @@ export default function About() {
                     textStyle="h3"
                     as="h3"
                 >
-                    <small>
                         Hola! Hi! Salut! Ciao! Moin! Ahoy! Namaste! <br />
-                        </small>
+
 
                 </Text>
                 <Text
@@ -38,11 +37,12 @@ export default function About() {
                 </Text>
                 </Box>
             <Box
-                w={{ base: "100%", sm: "30%"}}
-                mt={{ base: "5rem", sm: "unset" }}
+                
+                mt={"2rem"}
                 
                 >   
                 <Image
+                    w={{ base: "70%", sm: "70%" }}    
                     m={{ base: "0 auto", sm: "0 0 0 auto" }}
                     src={IMAGES.other.bauhaus_story_gif}
                     alt="It is me, playing with a paper cut created at the bauhaus paper workshop at gropiusbau, berlin"
