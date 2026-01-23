@@ -100,7 +100,7 @@ export default function Footer() {
                 </Link>
 
                 <Text textStyle="small" as="p" m={0}>
-                    Coded by myself. Constantly iterating. © 2023
+                    Coded by myself. Check the repo and copy what you like.
                 </Text>
             </Flex>
         </>
