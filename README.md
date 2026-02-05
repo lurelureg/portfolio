@@ -51,3 +51,16 @@ This project is a bridge between design and code. To explain how it works, I’v
 1. `npm install` — Installs the dependency tree.
 2. `npm run dev` — Fires up the local development server.
 3. `npm run build` — Compiles and minifies the site for production.
+
+
+## 🤝 Let's Connect
+
+Did you like it? Used it? Please get in touch, I'd love to hear from you.
+
+* **LinkedIn:** [Connect with me here](https://www.linkedin.com/in/lucreciagarino/?locale=en_US)
+
+---
+
+## 🛠️ Credits
+
+A big shout-out to **[Rodri](https://github.com/rpgos)**, who jumped into the codebase and fixed the gallery in seconds. 
